@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Exploration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .cta-btn {
+      background-color: #FF5722;
+      padding: 10px 25px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .cta-btn:hover {
+      background-color: #E64A19;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .destination-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 32%;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    .card p {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 15px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #388E3C;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Nature Exploration</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h2>Discover the Wonders of Nature</h2>
+      <p>Explore the beauty of the earth with our nature guides and travel tips.</p>
+      <a href="#explore" class="cta-btn">Start Exploring</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At Nature Exploration, we provide curated travel experiences, guides, and adventures to help you connect with nature like never before. Whether you want to hike, explore forests, or simply appreciate the beauty of nature, we have something for you.</p>
+    </div>
+  </section>
+
+  <section id="explore">
+    <div class="container">
+      <h2>Explore Our Top Destinations</h2>
+      <div class="destination-cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Mountain View">
+          <h3>Mountain Adventures</h3>
+          <p>Explore the towering peaks and scenic views of the mountain ranges.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Forest Exploration">
+          <h3>Forest Escapes</h3>
+          <p>Wander through lush forests, discover wildlife, and enjoy the tranquility.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Beach Retreat">
+          <h3>Beach Retreats</h3>
+          <p>Relax on serene beaches with breathtaking ocean views.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for more information or to book your next adventure!</p>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nature Exploration. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
